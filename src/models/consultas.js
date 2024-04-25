@@ -27,9 +27,9 @@ const registrarUsuario = async (userData) => {
 
     try {
         const result = await pool.query(query, values);
-        return result.rows[0]; // Devuelve el usuario recién registrado
+        return result.rows[0]; 
     } catch (error) {
-        throw error; // Captura y relanza cualquier error
+        throw error; 
     }
 };
 
